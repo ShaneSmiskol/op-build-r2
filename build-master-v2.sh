@@ -16,8 +16,7 @@ export GIT_AUTHOR_NAME="ShaneSmiskol"
 export GIT_AUTHOR_EMAIL="shane@smiskol.com"
 export GIT_SSH_COMMAND="ssh -i /data/gitkey"
 
-VERSION=$(cat selfdrive/common/version.h | awk -F\" '{print $2}')
-echo "#define COMMA_VERSION \"$VERSION-release\"" > selfdrive/common/version.h
+VERSION="0.7.5"
 
 cd /data/openpilot
 git checkout master
